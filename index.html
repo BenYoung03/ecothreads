@@ -8,10 +8,41 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="container">
+    <div class="header">
+        <div class="company-name">Ecothreads</div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <label for="cars">Choose a car:</label>
+
+    <div class="filter-container">
+        <select name="type" id="type">
+            <option value="hoodie">Hoodie</option>
+            <option value="tshirt">T-Shirt</option>
+            <option value="mercedes"></option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    
     
     <div class="grid-container">
-        <div class="grid-item item-1">
+        <div class="grid-item hoodie blue xl men mint">
             <img src="img/hoodie.jpg">
+                <div class="grid-item-text">
+                    <h1>Blue Hoodie</h1>
+                    <ul>
+                        <li>Type: Hoodie</li>
+                        <li>Colour: Blue</li>
+                        <li>Size: XL</li>
+                        <li>Gender: Men</li>
+                        <li>Condition: Mint</li>
+                    </ul>
+                    <button class="order">Order</button>
+                </div>
         </div>
         <div class="grid-item item-2">
             <div>test</div>
@@ -23,8 +54,21 @@
         <div class="grid-item item-2">
             <div>test</div>
         </div>
-        
-        
+        <div class="grid-item item-2">
+            <div>test</div>
+        </div>
+        <div class="grid-item item-2">
+            <div>test</div>
+        </div>
+        <div class="grid-item item-2">
+            <div>test</div>
+        </div>
+        <div class="grid-item item-2">
+            <div>test</div>
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>

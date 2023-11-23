@@ -5,30 +5,93 @@ body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 100px;
+}
+
+.header{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1F2937;
+    margin-bottom: 25px;
+}
+
+.company-name {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    margin-left: 72px;
+}
+
+.header > ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    margin-right: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(auto-fill, 500px);
     grid-auto-rows: 300px;
     grid-gap: 25px;
+    justify-content: center;
 }
 
 .grid-item {
-    background-color: #ccc;
+    background-color: white;
     border-radius: 20px;
-    border: 1px solid #999;
+    border: 2px solid black;
     display: flex;
+}
+
+.grid-item-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.grid-item-text > ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 20px; 
+}
+
+.grid-item-text > h1{
+    margin: 10px 0 0 40px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
 }
 
 img {
     width: 200px;
-    height: 300px;
+    height: 297px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 
+.order {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 0 0 40px;
+    transition: 0.3s;
+}
+
+.order:hover {
+    background-color: black;
+    color: white;
+}
