@@ -47,12 +47,34 @@ a {
     font-size: 32px;
 }
 
+.filter-container > button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.filter-container > button:hover {
+    background-color: #D3D3D3;
+}
+
+.filter-container > button:active{
+    background-color: black;
+    color: white;
+}
+
 select {
     padding: 10px;
     font-size: 20px;
     border-radius: 10px;
     border: 2px solid black;
     margin-right: 20px;
+    margin-left: 10px;
+    background-color: white;
+    cursor: pointer;
 }
 
 .grid-container {
@@ -105,10 +127,18 @@ img {
     font-size: 20px;
     cursor: pointer;
     margin: 0 0 0 40px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .order:hover {
+    background-color: #D3D3D3;
+}
+
+.order:active{
     background-color: black;
     color: white;
+}
+
+.hide {
+    display: none;
 }

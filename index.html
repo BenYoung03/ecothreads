@@ -19,7 +19,7 @@
 
     <div class="filter-container">
         <div class="type-container">
-            <label for="type">Clothing type:</label>
+            <label for="type">Clothing type: </label>
             <select name="type" id="type">
                 <option value="all">Show All</option>
                 <option value="hoodie">Hoodie</option>
@@ -31,8 +31,8 @@
             </select>
         </div>
         <div class="size-container">
-            <label for="type">Size:</label>
-            <select name="type" id="type">
+            <label for="size">Size: </label>
+            <select name="size" id="size">
                 <option value="all">Show All</option>
                 <option value="XXL">XXL</option>
                 <option value="XL">XL</option>
@@ -43,17 +43,18 @@
             </select>
         </div>
         
-        <label for="type">Gender:</label>
-        <select name="type" id="type">
+        <label for="gender">Gender: </label>
+        <select name="gender" id="gender">
             <option value="all">Show All</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select>
+        <button class="confirm-filter">Confirm</button>
     </div>
     
     
     <div class="grid-container">
-        <div class="grid-item hoodie blue xl men mint">
+        <div class="grid-item hoodie XL male all">
             <img src="img/hoodie.jpg">
                 <div class="grid-item-text">
                     <h1>Blue Hoodie</h1>
@@ -67,8 +68,19 @@
                     <button class="order">Order</button>
                 </div>
         </div>
-        <div class="grid-item item-2">
-            <div>test</div>
+        <div class="grid-item hoodie S female all">
+            <img src="img/hoodie.jpg">
+                <div class="grid-item-text">
+                    <h1>Pink hoodie</h1>
+                    <ul>
+                        <li>Type: Hoodie</li>
+                        <li>Colour: Pink</li>
+                        <li>Size: S</li>
+                        <li>Gender: Women</li>
+                        <li>Condition: Worn</li>
+                    </ul>
+                    <button class="order">Order</button>
+                </div>
         </div>
         <div class="grid-item item-2">
             <div>test</div>
