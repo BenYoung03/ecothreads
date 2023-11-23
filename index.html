@@ -17,14 +17,37 @@
         </ul>
     </div>
 
-    <label for="cars">Choose a car:</label>
-
     <div class="filter-container">
+        <div class="type-container">
+            <label for="type">Clothing type:</label>
+            <select name="type" id="type">
+                <option value="all">Show All</option>
+                <option value="hoodie">Hoodie</option>
+                <option value="tshirt">T-Shirt</option>
+                <option value="coats">Coats</option>
+                <option value="sweatpants">Sweatpants</option>
+                <option value="jeans">Jeans</option>
+                <option value="shoes">Shoes</option>
+            </select>
+        </div>
+        <div class="size-container">
+            <label for="type">Size:</label>
+            <select name="type" id="type">
+                <option value="all">Show All</option>
+                <option value="XXL">XXL</option>
+                <option value="XL">XL</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="S">S</option>
+                <option value="XS">XS</option>
+            </select>
+        </div>
+        
+        <label for="type">Gender:</label>
         <select name="type" id="type">
-            <option value="hoodie">Hoodie</option>
-            <option value="tshirt">T-Shirt</option>
-            <option value="mercedes"></option>
-            <option value="audi">Audi</option>
+            <option value="all">Show All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
         </select>
     </div>
     
