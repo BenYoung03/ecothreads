@@ -1,8 +1,7 @@
-const items = document.querySelectorAll(".grid-item");
 const confirmBtn = document.querySelector('.confirm-filter');
 
-//TODO: Fix it so males and females don't both show up when male is selected
 confirmBtn.addEventListener('click', function() {
+    const items = document.querySelectorAll(".grid-item");
     const selectedClothingType = document.getElementById('type').value;
     const selectedGender = document.getElementById('gender').value;
     const selectedSize = document.getElementById('size').value;
@@ -18,7 +17,6 @@ confirmBtn.addEventListener('click', function() {
 const addItem = document.querySelector(".new-item");
 const addItemContainer = document.querySelector(".new-item-container");
 addItem.addEventListener('click', function() {
-    
     addItem.disabled = true;
     const containerForm = document.createElement("div");
     addItemContainer.appendChild(containerForm);
@@ -62,12 +60,12 @@ addItem.addEventListener('click', function() {
     containerForm.appendChild(label3);
     const input3 = document.createElement("select");
     containerForm.appendChild(input3);
-        input3.appendChild(new Option("XXL", "XXL")); 
-        input3.appendChild(new Option("XL", "XL"));
+        input3.appendChild(new Option("XXL", "xtraxtra")); 
+        input3.appendChild(new Option("XL", "xtralrg"));
         input3.appendChild(new Option("L", "L"));
         input3.appendChild(new Option("M", "M"));
         input3.appendChild(new Option("S", "S"));
-        input3.appendChild(new Option("XS", "XS"));
+        input3.appendChild(new Option("XS", "xtras"));
 
     const label4 = document.createElement("LABEL");
     label4.textContent = "Gender: ";
@@ -134,7 +132,8 @@ addItem.addEventListener('click', function() {
         newItemText.appendChild(listStart);
 
         const list1 = document.createElement("li");
-        list1.textContent = 'Type: ' + input1.value;
+        list1.textContent = 'Type: ' + input1.selectedOptions[0].textContent;
+        newItemContainer.classList.add(input1.value);
         listStart.appendChild(list1);
 
         const list2 = document.createElement("li");
@@ -142,11 +141,13 @@ addItem.addEventListener('click', function() {
         listStart.appendChild(list2);
 
         const list3 = document.createElement("li");
-        list3.textContent = 'Size: ' + input3.value;
+        list3.textContent = 'Size: ' + input3.selectedOptions[0].textContent;
+        newItemContainer.classList.add(input3.value);
         listStart.appendChild(list3);
 
         const list4 = document.createElement("li");
-        list4.textContent = 'Gender: ' + input4.value;
+        list4.textContent = 'Gender: ' + input4.selectedOptions[0].textContent;
+        newItemContainer.classList.add(input4.value);
         listStart.appendChild(list4);
 
         const list5 = document.createElement("li");
@@ -158,6 +159,9 @@ addItem.addEventListener('click', function() {
         newItemText.appendChild(orderBtn);
         orderBtn.classList.add("order");
 
+        newItemContainer.classList.add("all");
+
+        console.log(newItemContainer.classList);
         addItem.disabled = false;
         containerForm.remove();
         labelHeader.remove();
