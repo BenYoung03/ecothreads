@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    display: flex;
+    align-items: flex-start;
+    background-image: url("./img/campus.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.logo{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    padding: 16px 0;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+.odin-logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.right{
+    width: 100%;
+    height: 100%;
+    margin: 150px 0px 0px 0px;
+    font-size: 12px;
+}
+
+.right > h2{
+    margin: 0px 100px 30px 60px;
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sign-in > h1 {
+    margin: 10px 0px 0px 60px;
+}
+
+.form-container{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 0px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
+}
+
+.form-container > h1,p{
+    margin: 0px 0px 10px 60px;
+}
+
+p {
+    margin: 0px 0px 10px 60px;
+    font-size: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-content > div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 20px 60px;
+}
+
+.form-content > div > label{
+    margin: 0px 0px 5px 0px;
+    font-size: 15px;
+}
+
+.sign-in-confirm {
+    margin: 50px 0px 100px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    background-color: darkred;
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in-confirm:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.sign-in-confirm:active {
+    background-color: rgb(200, 0, 0);
+}
+
+.form-content input[type='text'],
+.form-content input[type='password'],
+.form-content input[type='email'],
+.form-content input[type='tel']{
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 1px 1px 3px #ccc;
+}
+
+.form-content input:focus{
+    outline: none;
+    border: 1px solid black;
+    background-color: #ccc;
+}
+
+.form-content input:hover{
+    background-color: #ccc;
+}
+
+.form-content input:invalid{
+    border: 1px solid red;
+}
+
+.form-content input:required:valid{
+    border: 1px solid green;
+}
+
+@media screen and (max-width: 950px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left {
+        flex-shrink: 0;
+        height: 50vh;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 25px;
+        flex-shrink: 0;
+        height: 50vh;
+    }
+
+    .sign-in{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-in > *{
+        margin: 0px 0px 10px 0px;
+    }
+
+    .form-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    .form-container > h1,p{
+        margin: 0px 0px 10px 0px;
+        text-align: center;
+    }
+
+    .right > h2{
+        margin: 0px 10px 10px 10px;
+        text-align: center;
+    }
+
+    .form-content > div{
+        margin: 10px 0px 20px 20%;
+    }
+
+    .form-content input[type='text'],
+    .form-content input[type='password'],
+    .form-content input[type='email'],
+    .form-content input[type='tel']{
+        width: 80%;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-in-confirm{
+        margin: 10px 0px 20px 60px;
+        width: 80%;
+    }
+    
+}

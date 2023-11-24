@@ -38,6 +38,13 @@ a {
     font-size: 24px;
 }
 
+.new-item-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .filter-container {
     display: flex;
     justify-content: center;
@@ -47,7 +54,13 @@ a {
     font-size: 32px;
 }
 
-.filter-container > button {
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-container > button,
+.new-item-container > button {
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
@@ -141,4 +154,18 @@ img {
 
 .hide {
     display: none;
+}
+
+.item-add-label{
+    font-size: 20px;
+}
+
+.item-add-text{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: white;
 }
