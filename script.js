@@ -43,8 +43,8 @@ addItem.addEventListener('click', function() {
     containerForm.appendChild(input1);
         input1.appendChild(new Option("Hoodie", "hoodie")); 
         input1.appendChild(new Option("T-Shirt", "tshirt"));
-        input1.appendChild(new Option("Coats", "coats"));
-        input1.appendChild(new Option("Sweatpants", "Sweatpants"));
+        input1.appendChild(new Option("Coat", "coat"));
+        input1.appendChild(new Option("Sweatpants", "sweatpants"));
         input1.appendChild(new Option("Jeans", "jeans"));
         input1.appendChild(new Option("Shoes", "shoes"));
 
