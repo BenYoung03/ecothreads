@@ -12,5 +12,8 @@ To use the Ecothreads website, [click here!](https://benyoung03.github.io/ecothr
 
 The website allows you to sort by clothing item, add items to the clothing system and mock order items. The login button also brings you to a mock log in portal. To scale this project further, the login functionality could be linked to the Lakehead University portal itself, orders could be handled instead of being mock handled, and admins should only be able to add items to the system as Lakehead University members will bring there clothing to a central location on campus, and donate it and the admin of the system will input the item information and store the item in order to keep anonymity between the donor and the receiver!
 
+# Notes
+**Not yet optimized for mobile viewing**
+
 # Authors
 * **Benjamin Young** - [BenYoung03](https://github.com/BenYoung03)
